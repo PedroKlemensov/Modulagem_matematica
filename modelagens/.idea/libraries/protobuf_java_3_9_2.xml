@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="protobuf-java-3.9.2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../ORTools/ORTools/protobuf-java-3.9.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../ORTools/ORTools/ortools-win32-x86-64-9.3.10497-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../ORTools/ORTools/ortools-win32-x86-64-9.3.10497.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../ORTools/ORTools/ortools-java-9.3.10497.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../ORTools/ORTools/jna-5.11.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../ORTools/ORTools/jna-platform-5.11.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../ORTools/ORTools/ortools-java-9.3.10497-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
