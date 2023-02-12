@@ -44,28 +44,8 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.tarefa5">
-    <configuration name="Exemplo1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Exemplo1" />
-      <module name="Modelagens" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Exercicio1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Exercicio1" />
-      <module name="Modelagens" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="tarefa3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="tarefa3" />
-      <module name="Modelagens" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="ReplState" timestamp="1676217504588">{:repl-history {:ide [], :local [], :remote []}}</component>
+  <component name="RunManager" selected="Application.tarefa8">
     <configuration name="tarefa4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="tarefa4" />
       <module name="Modelagens" />
@@ -75,6 +55,27 @@
     </configuration>
     <configuration name="tarefa5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="tarefa5" />
+      <module name="Modelagens" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="tarefa6" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="tarefa6" />
+      <module name="Modelagens" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="tarefa7" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="tarefa7" />
+      <module name="Modelagens" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="tarefa8" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="tarefa8" />
       <module name="Modelagens" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -90,6 +91,20 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="Unnamed" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false" nameIsGenerated="true">
+      <module name="Modelagens" />
+      <setting name="displayName" value="Unnamed" />
+      <setting name="replType" value="NREPL" />
+      <setting name="execution" value="INTELLIJ" />
+      <setting name="jvmArgs" value="" />
+      <setting name="parameters" value="" />
+      <setting name="workingDir" value="$PROJECT_DIR$" />
+      <setting name="profiles" value="" />
+      <setting name="aliases" value="" />
+      <setting name="fixLineNumbers" value="false" />
+      <setting name="focusEditor" value="false" />
+      <method v="2" />
     </configuration>
     <configuration default="true" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
       <setting name="displayName" value="" />
@@ -116,13 +131,21 @@
       <setting name="focusEditor" value="false" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Application.tarefa8" />
+      <item itemvalue="Application.tarefa4" />
+      <item itemvalue="Application.tarefa5" />
+      <item itemvalue="Application.tarefa6" />
+      <item itemvalue="Application.tarefa7" />
+      <item itemvalue="Clojure REPL.Unnamed" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.tarefa8" />
         <item itemvalue="Application.tarefa5" />
+        <item itemvalue="Application.tarefa7" />
+        <item itemvalue="Application.tarefa6" />
         <item itemvalue="Application.tarefa4" />
-        <item itemvalue="Application.tarefa3" />
-        <item itemvalue="Application.Exercicio1" />
-        <item itemvalue="Application.Exemplo1" />
       </list>
     </recent_temporary>
   </component>
@@ -137,6 +160,7 @@
       <workItem from="1675947747733" duration="2680000" />
       <workItem from="1676154259829" duration="4326000" />
       <workItem from="1676175679446" duration="3914000" />
+      <workItem from="1676207874558" duration="4893000" />
     </task>
     <servers />
   </component>

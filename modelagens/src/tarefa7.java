@@ -5,7 +5,7 @@ import com.google.ortools.linearsolver.MPObjective;
 import com.google.ortools.linearsolver.MPSolver;
 import com.google.ortools.linearsolver.MPVariable;
 
-public class tarefa6 {
+public class tarefa7 {
 
     public static void main(String[] args) {
         Loader.loadNativeLibraries();
@@ -15,31 +15,32 @@ public class tarefa6 {
         double infinity = java.lang.Double.POSITIVE_INFINITY;
 
 
-        MPVariable refrigerador = solver.makeIntVar(0.0, 200, "refrigerador");
-        MPVariable bebeduros = solver.makeIntVar(0.0, 400, "bebeduros");
-        MPVariable fogoes = solver.makeIntVar(0.0, 120, "fogoes");
-
+        MPVariable a = solver.makeIntVar(20000, infinity, "a");
+        MPVariable b = solver.makeIntVar(12000, infinity, "b");
+        MPVariable c = solver.makeIntVar(6000, infinity, "c");
 
         System.out.println("Número de variáveis = " + solver.numVariables());
 
 
-        MPConstraint aco = solver.makeConstraint(-infinity, 4500, "aco");
-        aco.setCoefficient(refrigerador, 20);
-        aco.setCoefficient(bebeduros, 3);
-        aco.setCoefficient(fogoes, 15);
+        MPConstraint fabeicaçao = solver.makeConstraint(-infinity, 120000, "fabeicaçao");
+        fabeicaçao.setCoefficient(a, 0.3);
+        fabeicaçao.setCoefficient(b, 0.4);
+        fabeicaçao.setCoefficient(c, 0.5);
 
 
 
-        MPConstraint platico = solver.makeConstraint(-infinity, 2200, "platico");
-        platico.setCoefficient(refrigerador, 8);
-        platico.setCoefficient(bebeduros, 3);
-        platico.setCoefficient(fogoes, 2);
+        MPConstraint montagem = solver.makeConstraint(-infinity, 160000, "montagem");
+        montagem.setCoefficient(a, 0.4);
+        montagem.setCoefficient(b, 0.5);
+        montagem.setCoefficient(c, 0.8);
 
 
 
+        MPConstraint embalagem = solver.makeConstraint(-infinity, 48000, "embalagem");
+        embalagem.setCoefficient(a, 0.1);
+        embalagem.setCoefficient(b, 0.2);
+        embalagem.setCoefficient(c, 0.3);
 
-        
-        
 
         System.out.println("Número de restrições = " + solver.numConstraints());
 
@@ -47,10 +48,9 @@ public class tarefa6 {
         MPObjective objective = solver.objective();
 
 
-        objective.setCoefficient(refrigerador, 430);
-        objective.setCoefficient(bebeduros, 160);
-        objective.setCoefficient(fogoes, 270);
-
+        objective.setCoefficient(a, 16);
+        objective.setCoefficient(b, 30);
+        objective.setCoefficient(c, 50);
         objective.setMaximization();
 
 
@@ -60,9 +60,9 @@ public class tarefa6 {
         if (resultStatus == MPSolver.ResultStatus.OPTIMAL) {
             System.out.println("Solução:");
             System.out.println("Custo da função objetivo = " + objective.value());
-            System.out.println("refrigerador = " + refrigerador.solutionValue());
-            System.out.println("bebeduros = " + bebeduros.solutionValue());
-            System.out.println("fogoes = " + fogoes.solutionValue());
+            System.out.println("a = " + a.solutionValue());
+            System.out.println("b = " + b.solutionValue());
+            System.out.println("c = " + c.solutionValue());
             System.out.println("Tempo de resolução = " + solver.wallTime() + " milissegundos");
             System.out.println(solver.exportModelAsLpFormat());
         } else {
