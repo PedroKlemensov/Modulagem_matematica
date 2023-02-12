@@ -49,6 +49,7 @@ public class tarefa8 {
         objective.setCoefficient(cormecial, 40);
         objective.setCoefficient(flex, 60);
         objective.setCoefficient(plus, 30);
+
         objective.setMaximization();
 
 
