@@ -44,7 +44,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="ReplState" timestamp="1676217738331">{:repl-history {:ide [], :local [], :remote []}}</component>
+  <component name="ReplState" timestamp="1676218242914">{:repl-history {:ide [], :local [], :remote []}}</component>
   <component name="RunManager" selected="Application.tarefa8">
     <configuration name="tarefa4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="tarefa4" />
@@ -160,7 +160,7 @@
       <workItem from="1675947747733" duration="2680000" />
       <workItem from="1676154259829" duration="4326000" />
       <workItem from="1676175679446" duration="3914000" />
-      <workItem from="1676207874558" duration="5125000" />
+      <workItem from="1676207874558" duration="5626000" />
     </task>
     <servers />
   </component>
