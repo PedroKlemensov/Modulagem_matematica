@@ -33,19 +33,39 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/pedro/Documents/GitHub/Modulagem_matematica/ORTools/ORTools/ortools-java-9.3.10497-sources.jar&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/pedro/Documents/GitHub/Modulagem_matematica/modelagens&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="ReplState" timestamp="1676219155574">{:repl-history {:ide [], :local [], :remote []}}</component>
-  <component name="RunManager" selected="Application.tarefa10">
+  <component name="RunManager" selected="Application.Principal">
+    <configuration name="Principal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ProbelasTRanporte.Principal" />
+      <module name="Modelagens" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ProbelasTRanporte.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="lista03.tarefa5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lista03.tarefa5" />
+      <module name="Modelagens" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="tarefa10" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="lista03.tarefa10" />
       <module name="Modelagens" />
@@ -59,23 +79,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="tarefa5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="tarefa5" />
+    <configuration name="tarefa4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lista03.tarefa4" />
       <module name="Modelagens" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="tarefa7" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="tarefa7" />
-      <module name="Modelagens" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="tarefa8" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="tarefa8" />
-      <module name="Modelagens" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lista03.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -144,20 +156,20 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Application.Principal" />
+      <item itemvalue="Application.tarefa4" />
       <item itemvalue="Application.tarefa10" />
-      <item itemvalue="Application.tarefa8" />
       <item itemvalue="Application.tarefa9" />
-      <item itemvalue="Application.tarefa5" />
-      <item itemvalue="Application.tarefa7" />
+      <item itemvalue="Application.lista03.tarefa5" />
       <item itemvalue="Clojure REPL.Unnamed" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Principal" />
+        <item itemvalue="Application.tarefa4" />
+        <item itemvalue="Application.lista03.tarefa5" />
         <item itemvalue="Application.tarefa10" />
         <item itemvalue="Application.tarefa9" />
-        <item itemvalue="Application.tarefa8" />
-        <item itemvalue="Application.tarefa5" />
-        <item itemvalue="Application.tarefa7" />
       </list>
     </recent_temporary>
   </component>
@@ -173,10 +185,46 @@
       <workItem from="1676154259829" duration="4326000" />
       <workItem from="1676175679446" duration="3914000" />
       <workItem from="1676207874558" duration="6529000" />
+      <workItem from="1676285265306" duration="140000" />
+      <workItem from="1676378553973" duration="2268000" />
+      <workItem from="1676458112450" duration="230000" />
+      <workItem from="1676552298179" duration="2631000" />
+      <workItem from="1677150231405" duration="593000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ProbelasTRanporte/Data.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ProbelasTRanporte/Data.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ProbelasTRanporte/Data.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ProbelasTRanporte/Data.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ProbelasTRanporte/Data.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
