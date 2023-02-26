@@ -28,6 +28,7 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+<<<<<<< Updated upstream
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
@@ -66,6 +67,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+=======
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/projetos/Grafos/java",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="ReplState" timestamp="1676219179389">{:repl-history {:ide [], :local [], :remote []}}</component>
+  <component name="RunManager" selected="Application.tarefa10">
+>>>>>>> Stashed changes
     <configuration name="tarefa10" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="lista03.tarefa10" />
       <module name="Modelagens" />
@@ -184,12 +205,17 @@
       <workItem from="1675947747733" duration="2680000" />
       <workItem from="1676154259829" duration="4326000" />
       <workItem from="1676175679446" duration="3914000" />
+<<<<<<< Updated upstream
       <workItem from="1676207874558" duration="6529000" />
       <workItem from="1676285265306" duration="140000" />
       <workItem from="1676378553973" duration="2268000" />
       <workItem from="1676458112450" duration="230000" />
       <workItem from="1676552298179" duration="2631000" />
       <workItem from="1677150231405" duration="593000" />
+=======
+      <workItem from="1676207874558" duration="6553000" />
+      <workItem from="1677095062807" duration="469000" />
+>>>>>>> Stashed changes
     </task>
     <servers />
   </component>
