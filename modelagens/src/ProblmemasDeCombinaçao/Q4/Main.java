@@ -9,7 +9,7 @@ public class Main {
 
 		String input = "entradaQ4.txt";
 		Data data = new Data(input);
-		data.mostraData();
+		//data.mostraData();
 		
 		Modelo alocacao = new Modelo(data);
 		alocacao.solve(data);

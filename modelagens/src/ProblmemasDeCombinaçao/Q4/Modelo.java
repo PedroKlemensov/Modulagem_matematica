@@ -63,6 +63,8 @@ public class Modelo {
 				for (int j = 0; j < data.nMaquinas; j++) {
 					if (x[i][j].solutionValue() > 0.9) {
 						solucao[i][j] = 1.0;
+
+						System.out.println("Tarefa "+ (i+1)+ "na maquina "+(j+1));
 					}
 				}
 			}

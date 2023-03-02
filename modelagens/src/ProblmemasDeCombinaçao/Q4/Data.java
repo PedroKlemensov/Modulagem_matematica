@@ -27,7 +27,7 @@ public class Data {
 			lucroTarefas[i] = scanner.nextInt();
 		}
 		
-		tempoMaquinas = new int[nMaquinas];q
+		tempoMaquinas = new int[nMaquinas];
 		for (int i = 0; i < nMaquinas; i++) {
 			tempoMaquinas[i] = scanner.nextInt();
 		}
@@ -35,13 +35,13 @@ public class Data {
 
 	public void mostraData() {
 		System.out.println("Tarefas: " + nTarefas);
-		System.out.println("M�quinas: " + nMaquinas);
+		System.out.println("Maquinas: " + nMaquinas);
 		for (int i = 0; i < nTarefas; i++) {
 			System.out.println("Tarefa " + (i+1) + ": Tempo = " + tempoTarefas[i] + 
 					           ", Lucro = " + lucroTarefas[i]);
 		}
 		for (int i = 0; i < nMaquinas; i++) {
-			System.out.println("Tempo da m�quina " + (i+1) + " = " + tempoMaquinas[i]);
+			System.out.println("Tempo da maquina " + (i+1) + " = " + tempoMaquinas[i]);
 		}
 	}
 		
