@@ -22,72 +22,106 @@ public class Corte {
     public int[] Padroes_Aux;
 
     public int[] Qtd_Encomenda;
+    public int[] teste;
 
     public int[] Padroes_viaveis;
 
-    public int[][] pradroes;
-
-    public int Pattern(int peca){
+    public int Pattern(int peca, int[] teste){
         int resto = peca;
         int contador=0;
-        int[] teste_aux = new int[N_Cortes];
 
         for (int i = 0 ; i<N_Cortes ; i++){
 
-            //tudo em fun��o da subtra��o da Pe�a
             resto = peca - Padroes[i];
 
-            //menor padrao sempre vai ser o ultimo da Padroes[n] para facilitar a vida
-            //aqui ele entra se o padr�o ainda for maior que o menor valor para possibilitar a repeti��o
             if (resto>=Padroes[Padroes.length-1]){
                 contador++;
                 System.out.println(Padroes[i]+" subtraiu e resto: "+resto+ " contou: "+contador);
-                teste_aux[i]=contador;
-                //aqui exemplificando o resto na primeira rodada vai ser 70 e vai rerodar com a inten��o de denovo tirar da menor pe�a
-                Pattern(resto);
+                teste[i]=contador;
+                Pattern(resto,teste);
 
-
-            // para ter uma "segunda opini�o" e rerodar para poder ver proximos valores
             }else if (resto>0){
-                //talvez botar em fun��o de resto>=0 && resto <= menor padr�o
                 contador++;
                 System.out.println(Padroes[i]+" entrou para tirar: "+resto+ " contou: "+contador);
-                teste_aux[i]=contador;
-                Pattern(resto);
+                teste[i]=contador;
 
+                Pattern(resto,teste);
 
-            //para finalizar e ver qual era o resto do final
+            }else{
+                  System.out.println("N corta "+Padroes[i]+" pois resto: "+resto);
             }
 
+
+
         }
+        System.out.println(" ");
+        for (int j=0;j<teste.length;j++){
+            System.out.print(teste[j]+" ");
+        }
+        System.out.println(" ");
         System.out.println("-------------------------------");
+        System.out.println(" ");
+
+        for (int j=0;j<teste.length;j++){
+            teste[j]=0;
+        }
+        System.out.println(" ");
+
         return resto;
     }
 
+    public int NewPattern(int peca, int[] teste){
+        int resto = peca;
+        int contador=0;
+
+        for (int i = 0 ; i<N_Cortes ; i++){
+
+            resto = peca - Padroes[i];
+
+            if (resto>=Padroes[Padroes.length-1]){
+                contador++;
+                System.out.println(Padroes[i]+" subtraiu e resto: "+resto+ " contou: "+contador);
+                teste[i]=contador;
+                Pattern(resto,teste);
+
+            }else if (resto>0){
+                contador++;
+                System.out.println(Padroes[i]+" entrou para tirar: "+resto+ " contou: "+contador);
+                teste[i]=contador;
+
+                Pattern(resto,teste);
+
+            }else{
+                System.out.println("N corta "+Padroes[i]+" pois resto: "+resto);
+            }
 
 
 
-    public int NovoPattern(int peca){
-       int faltante = peca;
-       int contator = 0;
-       int[] 
+        }
 
 
+        System.out.println(" ");
+        for (int j=0;j<teste.length;j++){
+            System.out.print(teste[j]+" ");
+        }
+        System.out.println(" ");
+        System.out.println("-------------------------------");
+        System.out.println(" ");
 
+        for (int j=0;j<teste.length;j++){
+            teste[j]=0;
+        }
+        System.out.println(" ");
 
-
-
-        return faltante;
+        return resto;
     }
 
-
-
-
-        public Corte(String input) throws FileNotFoundException {
+    public Corte(String input) throws FileNotFoundException {
         Scanner scanner = new Scanner(new FileReader(input));
         Peca = scanner.nextInt();
         N_Cortes = scanner.nextInt();
         Padroes = new int[N_Cortes];
+        teste = new int[N_Cortes];
         Padroes_Aux = new int[N_Cortes];
         Qtd_Encomenda = new int[N_Cortes];
         Padroes_viaveis = new int[N_Cortes*N_Cortes];
@@ -106,7 +140,9 @@ public class Corte {
         }
 //        System.out.println(Padroes[Padroes.length-1]);
 
-        Pattern(Peca);
+        Pattern(Peca,teste);
+        System.out.println("/////////////////////////////////////////////////////////");
+        NewPattern(Peca,teste);
 
 
 

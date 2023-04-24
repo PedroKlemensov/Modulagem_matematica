@@ -20,5 +20,7 @@ public class Main {
         String adapt = "problema_corte.txt";
         Corte problema = new Corte(adapt);
 
+       // Modelo_Corte Corte_Adapt = new Modelo_Corte(problema);
+
     }
 }
