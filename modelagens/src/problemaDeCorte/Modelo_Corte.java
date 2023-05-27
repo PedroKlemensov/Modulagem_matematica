@@ -1,5 +1,4 @@
-package Corte_Uni;
-
+package problemaDeCorte;
 import com.google.ortools.Loader;
 import com.google.ortools.linearsolver.MPConstraint;
 import com.google.ortools.linearsolver.MPObjective;
@@ -33,7 +32,7 @@ public class Modelo_Corte {
         solver = MPSolver.createSolver("SCIP");
         double infinity = Double.POSITIVE_INFINITY;
 
-        //x receber o tamanho da lista de resto que conseguirimos depois de rodar todos os padrões e pegar seus restos
+        //x receber o tamanho da lista de resto que conseguirimos depois de rodar todos os padrï¿½es e pegar seus restos
         x = new MPVariable[cut.resto.length];
 
         for (int i=0;i < x.length ; i++){
@@ -78,7 +77,7 @@ public class Modelo_Corte {
             System.out.println("Tempo de resolucao = " + solver.wallTime() + " milissegundos");
             System.out.println(solver.exportModelAsLpFormat());
         } else {
-            System.out.println("Solução ótima não encontrada!");
+            System.out.println("Soluï¿½ï¿½o ï¿½tima nï¿½o encontrada!");
         }
     }
 

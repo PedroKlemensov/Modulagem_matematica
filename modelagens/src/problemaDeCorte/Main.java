@@ -1,4 +1,4 @@
-package Corte_Uni;
+package problemaDeCorte;
 
 import java.io.FileNotFoundException;
 
