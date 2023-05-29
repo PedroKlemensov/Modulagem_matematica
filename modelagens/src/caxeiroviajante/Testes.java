@@ -10,6 +10,8 @@ public class Testes {
 
 
         ArrayList<Vertice> ListaTeste = new ArrayList<Vertice>();
+        ArrayList<Vertice> listalida = new ArrayList<Vertice>();
+
         Vertice vertice = new Vertice(2, 3);
         ListaTeste.add(vertice);
 
@@ -20,6 +22,7 @@ public class Testes {
         System.out.println(ListaTeste);
         System.out.println(ListaTeste.get(0).getPosx());
         System.out.println(ListaTeste.get(1).getPosx());
-
+        Leitura leitura = new Leitura();
+        leitura.Leitura();
     }
 }
