@@ -1,4 +1,8 @@
 package problemaDeCorte;
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 import com.google.ortools.Loader;
 import com.google.ortools.linearsolver.MPConstraint;
 import com.google.ortools.linearsolver.MPObjective;
@@ -19,7 +23,11 @@ public class Modelo_Corte {
 
 
     public Modelo_Corte (Corte cut){
+<<<<<<< Updated upstream
 //        int[] need={70,100,120};
+=======
+        int[] need={70,100,120};
+>>>>>>> Stashed changes
 //        int[] resto={10,0,30,20,40};
 //        int[][] padroes={{1,1,0},{0,0,3},{0,2,0},{1,0,1},{0,1,1}};
 
@@ -40,7 +48,11 @@ public class Modelo_Corte {
         }
         System.out.println("Numero de variaveis = " + solver.numVariables());
 
+<<<<<<< Updated upstream
         min = solver.objective();
+=======
+        MPObjective min = solver.objective();
+>>>>>>> Stashed changes
         for (int i=0; i < cut.resto.length ; i++){
             min.setCoefficient(x[i],cut.resto[i]);
         }
