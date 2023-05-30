@@ -46,42 +46,6 @@
 }</component>
   <component name="ReplState" timestamp="1676219155574">{:repl-history {:ide [], :local [], :remote []}}</component>
   <component name="RunManager" selected="Application.Testes">
-    <configuration default="true" type="Babashka" factoryName="BabashkaLocalRepl" activateToolWindowBeforeRun="false">
-      <setting name="displayName" value="" />
-      <setting name="bbPath" value="" />
-      <setting name="parameters" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <setting name="workingDir" value="" />
-      <setting name="focusEditor" value="false" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
-      <setting name="displayName" value="" />
-      <setting name="replType" value="NREPL" />
-      <setting name="execution" value="LEININGEN" />
-      <setting name="jvmArgs" value="" />
-      <setting name="parameters" value="" />
-      <setting name="workingDir" value="" />
-      <setting name="profiles" value="" />
-      <setting name="aliases" value="" />
-      <setting name="fixLineNumbers" value="false" />
-      <setting name="focusEditor" value="false" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="ClojureREPL" factoryName="Remote" activateToolWindowBeforeRun="false">
-      <setting name="displayName" value="" />
-      <setting name="host" value="" />
-      <setting name="port" value="0" />
-      <setting name="replType" value="SOCKET" />
-      <setting name="configType" value="SPECIFY" />
-      <setting name="replPortFileType" value="STANDARD" />
-      <setting name="customPortFile" value="" />
-      <setting name="fixLineNumbers" value="false" />
-      <setting name="focusEditor" value="false" />
-      <method v="2" />
-    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ProblmemasDeCombinaçao.Q4.Main" />
       <module name="Modelagens" />
@@ -147,6 +111,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="Babashka" factoryName="BabashkaLocalRepl" activateToolWindowBeforeRun="false">
+      <setting name="displayName" value="" />
+      <setting name="bbPath" value="" />
+      <setting name="parameters" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <setting name="workingDir" value="" />
+      <setting name="focusEditor" value="false" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Unnamed" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false" nameIsGenerated="true">
       <module name="Modelagens" />
       <setting name="displayName" value="Unnamed" />
@@ -161,12 +136,38 @@
       <setting name="focusEditor" value="false" />
       <method v="2" />
     </configuration>
+    <configuration default="true" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
+      <setting name="displayName" value="" />
+      <setting name="replType" value="NREPL" />
+      <setting name="execution" value="LEININGEN" />
+      <setting name="jvmArgs" value="" />
+      <setting name="parameters" value="" />
+      <setting name="workingDir" value="" />
+      <setting name="profiles" value="" />
+      <setting name="aliases" value="" />
+      <setting name="fixLineNumbers" value="false" />
+      <setting name="focusEditor" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="ClojureREPL" factoryName="Remote" activateToolWindowBeforeRun="false">
+      <setting name="displayName" value="" />
+      <setting name="host" value="" />
+      <setting name="port" value="0" />
+      <setting name="replType" value="SOCKET" />
+      <setting name="configType" value="SPECIFY" />
+      <setting name="replPortFileType" value="STANDARD" />
+      <setting name="customPortFile" value="" />
+      <setting name="fixLineNumbers" value="false" />
+      <setting name="focusEditor" value="false" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Application.Testes" />
       <item itemvalue="Application.problemaDeCorte.Main" />
       <item itemvalue="Application.ProblmemasDeCombinaçao.Q6.Main" />
       <item itemvalue="Application.Main" />
       <item itemvalue="Application.Principal" />
+      <item itemvalue="Clojure REPL.Unnamed" />
     </list>
     <recent_temporary>
       <list>
