@@ -1,1 +1,4 @@
 Para a Q3,4,6 {Perguntar como limitar um produto pelo outro}
+
+
+raiz( (quadrado(x1-x2))  + (quadrado(y1 - y2)) )
