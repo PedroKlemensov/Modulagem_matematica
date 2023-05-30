@@ -6,7 +6,10 @@ public class Leitura {
 
     public void Leitura(){
         StringBuilder conteudo = new StringBuilder();
-        try (BufferedReader br = new BufferedReader(new FileReader("a280.txt"))) {
+        //o arquevo a280 e inpossivel de trabalar de maneira generiaca pq ele e mal formatado os espaço sao
+        // todos mal feitos nem mesmo usando trin da pra usar isso direito entao usar os outros gradecido
+
+        try (BufferedReader br = new BufferedReader(new FileReader("att48.txt"))) {
             String linha;
             String[] valores;
             boolean inicio = false;
@@ -17,11 +20,18 @@ public class Leitura {
                 }
 
                 if (inicio) {
+                    System.out.println("//////comeco////////");
+
                     System.out.println(linha);
-                    System.out.print(valores[valores.length - 1]);
+                    System.out.println(" ");
+                    System.out.print(Integer.parseInt(valores[valores.length - 2]));
                     System.out.print( " ");
-                    System.out.println(valores[valores.length - 2]);
+                    System.out.println(Integer.parseInt(valores[valores.length - 1]));
                     System.out.println( " ");
+                    System.out.println("///////////FIM//////////");
+                    System.out.println( " ");
+
+
 
 
                 }

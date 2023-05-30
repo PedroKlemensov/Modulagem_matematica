@@ -1,27 +1,27 @@
 package caxeiroviajante;
 
 public class Vertice {
-    public double posx;
-    public double posy;
+    public int posx;
+    public int posy;
 
-    public Vertice(double posx, double posy) {
+    public Vertice(int posx, int posy) {
         this.posx = posx;
         this.posy = posy;
     }
 
-    public double getPosx() {
+    public int getPosx() {
         return posx;
     }
 
-    public void setPosx(double posx) {
+    public void setPosx(int posx) {
         this.posx = posx;
     }
 
-    public double getPosy() {
+    public int getPosy() {
         return posy;
     }
 
-    public void setPosy(double posy) {
+    public void setPosy(int posy) {
         this.posy = posy;
     }
 }
