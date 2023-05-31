@@ -13,7 +13,7 @@ public class Main {
 		modelo.solve();
 		modelo.setSolution(data);
 		
-		String output = "saida.txt";
+		String output = "saidaprof.txt";
 		Util util = new Util(output);
 		util.escreveRelatorio(data, modelo);
 	}
