@@ -14,7 +14,7 @@ public class Leitura {
         //o arquevo a280 e inpossivel de trabalar de maneira generiaca pq ele e mal formatado os espaço sao
         // todos mal feitos nem mesmo usando trin da pra usar isso direito entao usar os outros gradecido
 
-        try (BufferedReader br = new BufferedReader(new FileReader("att48.txt"))) {
+        try (BufferedReader br = new BufferedReader(new FileReader("a280.txt"))) {
             String linha;
             String[] valores;
             boolean inicio = false;
