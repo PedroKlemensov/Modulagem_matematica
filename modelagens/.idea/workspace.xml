@@ -45,7 +45,7 @@
   }
 }</component>
   <component name="ReplState" timestamp="1676219155574">{:repl-history {:ide [], :local [], :remote []}}</component>
-  <component name="RunManager" selected="Application.Testes">
+  <component name="RunManager" selected="Application.caxeiroviajante.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ProblmemasDeCombinaçao.Q4.Main" />
       <module name="Modelagens" />
@@ -85,8 +85,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Testes" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="caxeiroviajante.Testes" />
+    <configuration name="caxeiroviajante.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="caxeiroviajante.Main" />
       <module name="Modelagens" />
       <extension name="coverage">
         <pattern>
@@ -162,7 +162,7 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.Testes" />
+      <item itemvalue="Application.caxeiroviajante.Main" />
       <item itemvalue="Application.problemaDeCorte.Main" />
       <item itemvalue="Application.ProblmemasDeCombinaçao.Q6.Main" />
       <item itemvalue="Application.Main" />
@@ -171,7 +171,7 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Testes" />
+        <item itemvalue="Application.caxeiroviajante.Main" />
         <item itemvalue="Application.problemaDeCorte.Main" />
         <item itemvalue="Application.ProblmemasDeCombinaçao.Q6.Main" />
         <item itemvalue="Application.Main" />
@@ -207,7 +207,7 @@
       <workItem from="1685357453685" duration="3921000" />
       <workItem from="1685464408939" duration="26000" />
       <workItem from="1685531363614" duration="151000" />
-      <workItem from="1685623817648" duration="432000" />
+      <workItem from="1685623817648" duration="4040000" />
     </task>
     <servers />
   </component>

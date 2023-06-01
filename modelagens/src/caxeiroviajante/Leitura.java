@@ -1,5 +1,7 @@
 package caxeiroviajante;
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -11,10 +13,20 @@ public class Leitura {
     public void Leitura(){
         vertices = new ArrayList<Vertice>();
         StringBuilder conteudo = new StringBuilder();
-        //o arquevo a280 e inpossivel de trabalar de maneira generiaca pq ele e mal formatado os espaço sao
-        // todos mal feitos nem mesmo usando trin da pra usar isso direito entao usar os outros gradecido
 
-        try (BufferedReader br = new BufferedReader(new FileReader("a280.txt"))) {
+        String nome = "att48.txt";
+        System.out.println("escolha o caso de teste: 1 a280: 2 att28: 3 att532");
+        Scanner s = new Scanner(System.in);
+        int resposta = s.nextInt();
+        if (resposta == (1)){
+            nome = "a280.txt";
+        }else if (resposta == (2)){
+            nome = "att48.txt";
+        } else if (resposta == (3)) {
+            nome = "att532.txt";
+        }
+
+        try (BufferedReader br = new BufferedReader(new FileReader(nome))) {
             String linha;
             String[] valores;
             boolean inicio = false;
@@ -25,19 +37,11 @@ public class Leitura {
                 }
 
                 if (inicio) {
-                    System.out.println("//////comeco////////");
 
-                    System.out.println(linha);
-                    System.out.println(" ");
+
                     double v1 = Double.parseDouble(valores[valores.length - 2]);
                     double v2 = Double.parseDouble(valores[valores.length - 1]);
-                    System.out.println( " ");
                     vertices.add(new Vertice(v1, v2));
-                    System.out.println("///////////FIM//////////");
-                    System.out.println( " ");
-
-
-
 
                 }
 

@@ -4,29 +4,16 @@ package caxeiroviajante;
 
 import java.util.ArrayList;
 
-public class Testes {
+public class Main {
     public static void main(String[] args) {
 
-
-
-        ArrayList<Vertice> ListaTeste = new ArrayList<Vertice>();
-
-        Vertice vertice = new Vertice(2, 3);
-        ListaTeste.add(vertice);
-
         ArrayList<Arco> listaarcos= new ArrayList<Arco>();
-        vertice = new Vertice(4, 3);
-        ListaTeste.add(vertice);
 
-        System.out.println(ListaTeste);
-        System.out.println(ListaTeste.get(0).getPosx());
-        System.out.println(ListaTeste.get(1).getPosx());
+
         Leitura leitura = new Leitura();
         leitura.Leitura();
         ArrayList<Vertice> listalida = leitura.vertices;
-//        for (int i = 0; i < listalida.size(); i++) {
-//            System.out.println(listalida.get(i).posx + " " + listalida.get(i).posy);
-//        }
+
 
         for (int i = 0; i < listalida.size(); i++){
             for (int j = 0; j < listalida.size(); j++){
