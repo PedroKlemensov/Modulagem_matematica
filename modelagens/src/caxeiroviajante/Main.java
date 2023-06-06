@@ -30,6 +30,9 @@ public class Main {
         for (int i = 0; i < listaarcos.size(); i++) {
             System.out.println(listaarcos.get(i).origem + " " + listaarcos.get(i).destino + " " +listaarcos.get(i).distancia );
         }
+        Modelo modelo = new Modelo(listaarcos);
+        modelo.solve();
+
 
     }
 }

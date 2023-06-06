@@ -208,10 +208,47 @@
       <workItem from="1685464408939" duration="26000" />
       <workItem from="1685531363614" duration="151000" />
       <workItem from="1685623817648" duration="4040000" />
+      <workItem from="1685887447121" duration="106000" />
+      <workItem from="1686053888900" duration="4062000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/caxeiroviajante/Modelo.java</url>
+          <line>63</line>
+          <properties class="caxeiroviajante.Modelo" method="solve">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/caxeiroviajante/Modelo.java</url>
+          <line>57</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/caxeiroviajante/Modelo.java</url>
+          <line>49</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/caxeiroviajante/Modelo.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="com.google.ortools.linearsolver.MPConstraint" memberName="swigCMemOwn" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
 </project>
