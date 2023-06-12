@@ -59,8 +59,25 @@ public class Modelo {
             }
         }
 
-
     }
-    public void solve() {solver.solve();}
+    public void solve() {
+        solver.solve();
+    }
+
+    public void setSolution(ArrayList<Arco> listaarcos) {
+        ArrayList<Arco>  lista = listaarcos;
+        custoSolucao = objective.value();
+        solucao = new double[lista.size()];
+        for (int i = 0; i < lista.size(); i++) {
+            if (x[i].solutionValue() > 0) {
+                solucao[i] = 1.0;
+            }
+        }
+    }
+
+    public String exportModel() {
+        return solver.exportModelAsLpFormat();
+    }
+
 
 }

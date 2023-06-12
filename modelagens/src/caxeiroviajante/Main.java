@@ -2,10 +2,14 @@
 package caxeiroviajante;
 
 
+
+
+
+import java.io.IOException;
 import java.util.ArrayList;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
         ArrayList<Arco> listaarcos= new ArrayList<Arco>();
 
@@ -27,11 +31,16 @@ public class Main {
         }
 
 //        Math.sqrt(  Math.pow(listalida.get(i).posx - listalida.get(j).posx)  + Math.pow(listalida.get(i).posy - listalida.get(j).posy)    );
-        for (int i = 0; i < listaarcos.size(); i++) {
-            System.out.println(listaarcos.get(i).origem + " " + listaarcos.get(i).destino + " " +listaarcos.get(i).distancia );
-        }
+//
+
         Modelo modelo = new Modelo(listaarcos);
         modelo.solve();
+        modelo.setSolution(listaarcos);
+
+        String output = "minhasaida.txt";
+        Util util = new Util(output);
+        util.escreveRelatorio(listaarcos, modelo);
+
 
 
     }
