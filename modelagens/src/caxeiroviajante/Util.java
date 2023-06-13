@@ -13,11 +13,11 @@ public class Util {
     }
 
     public void escreveRelatorio(ArrayList<Arco> listaarcos, Modelo modelo) throws IOException {
-        ArrayList<Arco>  lista = listaarcos;
+        ArrayList<Arco> lista = listaarcos;
         escreveModelo(modelo);
+        escreveDadosSaida(lista, modelo);
         fw.close();
     }
-
 
 
     public void escreveModelo(Modelo modelo) throws IOException {
@@ -27,16 +27,10 @@ public class Util {
         fw.write("\n\n");
     }
 
-    public void escreveDadosSaida(ArrayList<Arco> listaarcos, Modelo modelo) throws IOException	{
-        ArrayList<Arco>  lista = listaarcos;
+    public void escreveDadosSaida(ArrayList<Arco> listaarcos, Modelo modelo) throws IOException {
+        ArrayList<Arco> lista = listaarcos;
 
-        fw.write("/****** SAÍDA ******/ \n");
         fw.write("Custo da solução ótima: " + modelo.custoSolucao + "\n");
-        for (int i = 0; i < lista.size(); i++)	{
-            if (modelo.solucao[i] > 0) {
-                Arco arco = lista.get(i);
-                fw.write(arco.toString());
-            }
-        }
+
     }
 }

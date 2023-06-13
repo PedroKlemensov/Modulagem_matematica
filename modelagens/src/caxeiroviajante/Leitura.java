@@ -1,4 +1,5 @@
 package caxeiroviajante;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -10,7 +11,7 @@ public class Leitura {
 
     public ArrayList<Vertice> vertices;
 
-    public void Leitura(){
+    public void Leitura() {
         vertices = new ArrayList<Vertice>();
         StringBuilder conteudo = new StringBuilder();
 
@@ -18,9 +19,9 @@ public class Leitura {
         System.out.println("escolha o caso de teste: 1 a280: 2 att28: 3 att532");
         Scanner s = new Scanner(System.in);
         int resposta = s.nextInt();
-        if (resposta == (1)){
+        if (resposta == (1)) {
             nome = "a280.txt";
-        }else if (resposta == (2)){
+        } else if (resposta == (2)) {
             nome = "att48.txt";
         } else if (resposta == (3)) {
             nome = "att532.txt";
@@ -38,10 +39,13 @@ public class Leitura {
 
                 if (inicio) {
 
-
+                    double id = Double.parseDouble(valores[valores.length - 3]);
                     double v1 = Double.parseDouble(valores[valores.length - 2]);
                     double v2 = Double.parseDouble(valores[valores.length - 1]);
-                    vertices.add(new Vertice(v1, v2));
+
+
+
+                    vertices.add(new Vertice(id,v1, v2));
 
                 }
 
@@ -61,6 +65,6 @@ public class Leitura {
     }
 
 
-    }
+}
 
 
