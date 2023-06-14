@@ -22,15 +22,21 @@ public class Util {
 
     public void escreveModelo(Modelo modelo) throws IOException {
 
-        fw.write("/****** MODELO MATEMÁTICO ******/ \n");
+        fw.write("/****** MODELO MATEMÃ�TICO ******/ \n");
         fw.write(modelo.exportModel());
         fw.write("\n\n");
     }
 
     public void escreveDadosSaida(ArrayList<Arco> listaarcos, Modelo modelo) throws IOException {
         ArrayList<Arco> lista = listaarcos;
-
+        fw.write("/****** SAÍDA ******/ \n");
         fw.write("Custo da solução ótima: " + modelo.custoSolucao + "\n");
-
+        for (int i = 0; i < lista.size(); i++)	{
+            if (modelo.solucao[i] > 0) {
+                Arco arco = lista.get(i);
+                fw.write( arco.dadosarco() );
+                fw.write("\n");
+            }
+        }
     }
 }

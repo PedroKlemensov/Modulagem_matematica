@@ -14,6 +14,7 @@ public class Modelo {
     public MPObjective objective;
     public MPSolver solver;
     public MPVariable[] x;
+    public MPVariable[] u;
     public double custoSolucao;
     public double[] solucao;
 
@@ -22,11 +23,19 @@ public class Modelo {
 
         Loader.loadNativeLibraries();
         solver = MPSolver.createSolver("SCIP");
-        int u = 1;
         x = new MPVariable[lista.size()];
         for (int i = 0; i < lista.size(); i++) {
             Arco arco = lista.get(i);
             x[i] = solver.makeBoolVar("x[" + arco.origem + "][" + arco.destino + "]");
+        }
+        
+        u = new MPVariable[vertices.size()];
+        for (int i = 0; i < vertices.size(); i++) {
+        	if (i == 0)	{
+        		u[i] = solver.makeIntVar(1, 1, "u[" + (i+1) + "]");
+        	} else {
+        		u[i] = solver.makeIntVar(2, vertices.size(), "u[" + (i+1) + "]");
+        	}
         }
 
         objective = solver.objective();
@@ -35,6 +44,16 @@ public class Modelo {
             objective.setCoefficient(x[i], arco.distancia);
         }
         objective.setMinimization();
+        
+        for (int i = 0; i < lista.size(); i++) {
+            Arco arco = lista.get(i);
+            if (arco.origem != 1 && arco.destino != 1) {
+                MPConstraint ct = solver.makeConstraint(-Integer.MAX_VALUE, vertices.size()-1, "fluxo_origem");
+                ct.setCoefficient(u[arco.origem-1], 1);
+                ct.setCoefficient(u[arco.destino-1], -1);
+                ct.setCoefficient(x[i], vertices.size());
+            }
+        }
 
         for (int i = 0; i < vertices.size(); i++) {
             MPConstraint ct = solver.makeConstraint(1.0, 1.0, "fluxo_origem");
@@ -48,7 +67,7 @@ public class Modelo {
         }
 
         for (int i = 0; i < vertices.size(); i++) {
-            MPConstraint ct = solver.makeConstraint(1.0, 1.0, "fluxo_Destino");
+            MPConstraint ct = solver.makeConstraint(1.0, 1.0, "ante-ciclo");
             Double v = vertices.get(i).id;
             for (int j = 0; j < lista.size(); j++) {
                 Arco arco = lista.get(j);
@@ -59,39 +78,6 @@ public class Modelo {
         }
 
 
-
-       /*
-        //UM ARCO SAI DA ORIGEM
-        MPConstraint ct1 = solver.makeConstraint(1.0, 1.0, "fluxo_origem");
-        for (int i = 0; i < lista.size(); i++) {
-            Arco arco = lista.get(i);
-            if (arco.origem == lista.get(i).origem) {
-                ct1.setCoefficient(x[i], 1);
-            }
-        }
-
-        //UM ARCO CHEGA NO DESTINO
-        MPConstraint ct2 = solver.makeConstraint(1.0, 1.0, "fluxo_destino");
-        for (int i = 0; i < lista.size(); i++) {
-            Arco arco = lista.get(i);
-            if (arco.destino == lista.get(i).destino) {
-                ct2.setCoefficient(x[i], 1);
-            }
-        }
-
-        */
-
-        //PARA CADA VÉRTICE, UM ARCO CHEGA NELE
-
-        //PARA CADA VÉRTICE, UM ARCO SAI DELE
-
-//        MPConstraint ct3 = solver.makeConstraint(1.0, 1.0, "Naociclo");
-//        for (int i = 0; i < lista.size(); i++) {
-//            Arco arco = lista.get(i);
-//            if (arco.origem != arco.destino) {
-//                ct3.setCoefficient(x[i], 1);
-//            }
-//        }
 
     }
 
@@ -105,6 +91,7 @@ public class Modelo {
         solucao = new double[lista.size()];
         for (int i = 0; i < lista.size(); i++) {
             if (x[i].solutionValue() > 0) {
+            	listaarcos.get(i).mostraArco();
                 solucao[i] = 1.0;
             }
         }

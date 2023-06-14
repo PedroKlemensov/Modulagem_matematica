@@ -34,4 +34,11 @@ public class Arco {
     public void setDistancia(double distancia) {
         this.distancia = distancia;
     }
+    
+    public void mostraArco() {
+    	System.out.println(origem + " " + destino + " " + distancia);
+    }
+    public String dadosarco() {
+        return (origem + " " + destino + " " + distancia);
+    }
 }
