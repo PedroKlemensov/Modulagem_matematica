@@ -48,7 +48,7 @@ public class Modelo {
         for (int i = 0; i < lista.size(); i++) {
             Arco arco = lista.get(i);
             if (arco.origem != 1 && arco.destino != 1) {
-                MPConstraint ct = solver.makeConstraint(-Integer.MAX_VALUE, vertices.size()-1, "fluxo_origem");
+                MPConstraint ct = solver.makeConstraint(-Integer.MAX_VALUE, vertices.size()-1, "ante_clico");
                 ct.setCoefficient(u[arco.origem-1], 1);
                 ct.setCoefficient(u[arco.destino-1], -1);
                 ct.setCoefficient(x[i], vertices.size());
@@ -67,7 +67,7 @@ public class Modelo {
         }
 
         for (int i = 0; i < vertices.size(); i++) {
-            MPConstraint ct = solver.makeConstraint(1.0, 1.0, "ante-ciclo");
+            MPConstraint ct = solver.makeConstraint(1.0, 1.0, "fluxo-destino");
             Double v = vertices.get(i).id;
             for (int j = 0; j < lista.size(); j++) {
                 Arco arco = lista.get(j);
@@ -76,7 +76,6 @@ public class Modelo {
                 }
             }
         }
-
 
 
     }
